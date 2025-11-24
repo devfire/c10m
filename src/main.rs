@@ -10,7 +10,7 @@ static GLOBAL: MiMalloc = MiMalloc;
 
 #[tokio::main]
 async fn main() -> io::Result<()> {
-    let addr: SocketAddr = "127.0.0.1:8080".parse().unwrap();
+    let addr: SocketAddr = "172.16.1.162:8080".parse().unwrap();
 
     // Create a socket2 socket for advanced configuration
     let socket = Socket::new(Domain::IPV4, Type::STREAM, Some(Protocol::TCP))?;
